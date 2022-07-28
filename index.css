@@ -1,0 +1,155 @@
+/* design of the home page */
+
+@font-face {
+    font-family: "kurdish-font";
+    src: url("./font/kurdish.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "english-font";
+    src: url("./font/english.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* fonts */
+
+    --english-font: "english-font";
+    --kurdish-font: "kurdish-font";
+}
+
+::placeholder {
+    color: #000;
+    font-size: 17px;
+    font-family: "Courgette";
+}
+
+body {
+    background-color: #7a4bae;
+    font-family: "kurdish-font";
+    height: 50vh;
+    text-align: center;
+    color: #f4f4f4;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    height: 85vh;
+    overflow: hidden;
+    background-color: #7a4bae;
+}
+
+.top {
+    background-color: #7a4bae;
+    height: 65%;
+}
+
+.bottom {
+    background-color: #7a4bae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    transform: rotateZ(-6deg);
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+}
+
+.logo {
+    width: 155px;
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.name-wrapper{
+    font-family: "Courgette";
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+.search-wrapper {
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 300px;
+    height: 55px;
+    position: relative;
+    z-index: 10000;
+}
+
+.input {
+    padding: 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    font-family: "Courgette;
+    font-family: "Courgette";
+}
+
+.button {
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    right: 15px;
+    top: 22px;
+    z-index: 100;
+}
+
+.fa-search {
+    font-size: 17px;
+}
+
+.bottom-wrapper {
+    background-color: #a042bb;
+    transform: none;
+    position: absolute;
+    width: 1500px;
+    height: 500px;
+    padding-bottom: 120px;
+    position: absolute;
+    transform: translateY(150px);
+}
+
+.container-wrapper {
+    margin-top: 25px;
+}
+
+.icon-wrapper, .text-wrapper, .copyright-wrapper {
+    transform: rotateZ(6deg);
+}
+
+.icon-wrapper img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.text-wrapper {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.copyright-wrapper {
+    font-family: "Courgette";
+    margin-top: 40px;
+}
+
+@media only screen and (max-height: 450px){
+    .bottom {
+        display: none;
+    }
+}
